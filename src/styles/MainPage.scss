@@ -1,0 +1,30 @@
+.masonry {
+    column-count: 3;
+    column-gap: 1em;
+    background-color: #F0F0F0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100%,
+
+  }
+ 
+  
+  .item {
+    break-inside: avoid-column;
+    margin-bottom: 1em;
+    cursor: pointer;
+  }
+  .paragraphst {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: .7rem;
+  }
