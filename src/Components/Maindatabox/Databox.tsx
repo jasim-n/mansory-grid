@@ -1,5 +1,5 @@
 import { Col, Image, Row } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import moment from "moment";
 import { dr } from "@/Types/types";
@@ -7,10 +7,11 @@ const Databox = ({data}:dr) => {
   const router = useRouter();
   const [Loadedimg, setLoadedimg] = useState(true);
   console.log(data,'ghjk')
+  useEffect(()=>{if(data.image_url==null || data.image_url=='') setLoadedimg(false)},[data])
   const dateMoment = moment(data.created_at).format("MMMM Do ,YYYY");
   return (
     <div>
-      <Row onClick={() => router.push(`/MyProducts/${data.id}`)} className="databox">
+      <Row onClick={() => router.push(`/checkin/${data.id}`)} className="databox">
         <Col className="dataimg" span={24}>
           {Loadedimg && (
             <Image

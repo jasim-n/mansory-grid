@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { Space, Spin } from "antd";
-import Databox from "../../Components/Databox";
+import Databox from "../Components/Maindatabox/Databox";
 import { useQuery } from "@apollo/client";
 
-import {get_all  } from "../pages/api/Query/Query";
-import MainHead from '../../Components/MainHead';
+import {get_all  } from "../graphql/checkin/Query";
+import MainHead from '../Components/MainHeader/MainHead';
 import { DataBoxdata  } from '@/Types/types';
 
 

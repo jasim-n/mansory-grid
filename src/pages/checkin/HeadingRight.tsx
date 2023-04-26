@@ -1,7 +1,7 @@
 import { Button, Image, Input } from 'antd';
 import React, { useState } from 'react';
 import { useMutation } from "@apollo/client";
-import { Nameupdater } from "../api/Query/Mutation";
+import { Nameupdater } from "../../graphql/checkin/Mutation";
 
 const HeadingRight = ({headingValue,setHeadingValue,id}:any) => {
     const [edit, setEdit] = useState(false);

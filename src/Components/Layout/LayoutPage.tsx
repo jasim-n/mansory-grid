@@ -1,7 +1,7 @@
 import { Col, Layout, Row } from "antd";
 import { Router } from "next/router";
 import React from "react";
-import HeaderComponent from "./HeaderComponent";
+import HeaderComponent from "../MainHeader/HeaderComponent";
 
 const LayoutPage = ({ children }:any) => {
   const { Header, Footer, Sider, Content } = Layout;

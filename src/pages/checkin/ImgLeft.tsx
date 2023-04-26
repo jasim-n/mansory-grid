@@ -1,7 +1,7 @@
 import { Button, Col, Image, Input } from "antd";
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { imageUpdate } from "../api/Query/Mutation";
+import { imageUpdate } from "../../graphql/checkin/Mutation";
 
 const ImgLeft = ({ Imgurl, setImgUrl, id }: any) => {
   const [edit3, setEdit3] = useState<boolean>(false);

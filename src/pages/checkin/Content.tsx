@@ -1,7 +1,7 @@
 import { Button, Image, Input } from "antd";
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
-import { Commentupdate } from "../api/Query/Mutation";
+import { Commentupdate } from "../../graphql/checkin/Mutation";
 
 const Content = ({ commentValue, setCommentValue, id }: any) => {
   const [edit, setEdit] = useState(false);
@@ -55,6 +55,7 @@ const Content = ({ commentValue, setCommentValue, id }: any) => {
               src="/btnimg.png"
               preview={false}
               width={"12"}
+              alt=""
             ></Image>
           </button>
         </p>

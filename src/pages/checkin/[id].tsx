@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import ImgLeft from "./ImgLeft";
 import HeadingRight from "./HeadingRight";
 import Content from "./Content";
-import { GET_LOCATIONS } from "../api/Query/Query";
+import { GET_LOCATIONS } from "../../graphql/checkin/Query";
 
 const Allcheckin = () => {
   const [Imgurl, setImgUrl] = useState("text");
