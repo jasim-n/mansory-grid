@@ -33,7 +33,7 @@ export default function Home() {
         </Space>
       )}
       {loading == false &&
-        data?.check_in.map((s:DataBoxdata,n:any) => {
+        data?.check_in.map((s:DataBoxdata,n:number) => {
           return (
             <div key={n} className="item">
               <Databox data={s} />
