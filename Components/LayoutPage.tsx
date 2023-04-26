@@ -3,7 +3,7 @@ import { Router } from "next/router";
 import React from "react";
 import HeaderComponent from "./HeaderComponent";
 
-const LayoutPage = ({ children }) => {
+const LayoutPage = ({ children }:any) => {
   const { Header, Footer, Sider, Content } = Layout;
 
   return (
