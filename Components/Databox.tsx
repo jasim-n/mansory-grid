@@ -2,8 +2,8 @@ import { Col, Image, Row } from "antd";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import moment from "moment";
-import { DataBoxdata, Databoxs, dr } from "@/Types/types";
-const Databox = ({data}:any) => {
+import { dr } from "@/Types/types";
+const Databox = ({data}:dr) => {
   const router = useRouter();
   const [Loadedimg, setLoadedimg] = useState(true);
   console.log(data,'ghjk')
@@ -20,6 +20,7 @@ const Databox = ({data}:any) => {
               preview={false}
               style={{ width: "360px", borderRadius: "10px", maxWidth: "100%" }}
               height={220}
+              alt=""
             />
           )}
         </Col>

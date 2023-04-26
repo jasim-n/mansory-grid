@@ -6,7 +6,7 @@ import { useQuery } from "@apollo/client";
 
 import {get_all  } from "../pages/api/Query/Query";
 import MainHead from '../../Components/MainHead';
-import { DataBoxdata, Databoxs  } from '@/Types/types';
+import { DataBoxdata  } from '@/Types/types';
 
 
 export default function Home() {
@@ -33,9 +33,9 @@ export default function Home() {
         </Space>
       )}
       {loading == false &&
-        data?.check_in.map((s:Databoxs) => {
+        data?.check_in.map((s:DataBoxdata,n:any) => {
           return (
-            <div className="item">
+            <div key={n} className="item">
               <Databox data={s} />
             </div>
           );

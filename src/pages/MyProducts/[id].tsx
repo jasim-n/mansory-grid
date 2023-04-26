@@ -14,7 +14,7 @@ const Allcheckin = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const { loading, data } = useQuery(GET_LOCATIONS, {
+  const { data } = useQuery(GET_LOCATIONS, {
     variables: { id: id },
   });
 
@@ -31,7 +31,7 @@ const Allcheckin = () => {
       }
       setHeadingValue(a.name);
     }
-  }, [loading]);
+  }, [data]);
   return (
     <div>
       <Row style={{ padding: "2rem" }}>
@@ -47,7 +47,7 @@ const Allcheckin = () => {
             setCommentValue={setCommentValue}
             id={id}
           />
-         <div>
+          <div>
             <p className="date_time">Nov 10, 2022</p>
           </div>
         </Col>
