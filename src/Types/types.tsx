@@ -12,5 +12,5 @@ export interface Databoxs{
     check_in:DataBoxdata[];
 }
 export interface dr {
-    data:DataBoxdata
+    data:DataBoxdata[]
 }
