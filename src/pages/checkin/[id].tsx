@@ -17,6 +17,7 @@ const Allcheckin = () => {
   const { data } = useQuery(GET_LOCATIONS, {
     variables: { id: id },
   });
+  
 
   useEffect(() => {
     if (data?.check_in_by_pk) {
