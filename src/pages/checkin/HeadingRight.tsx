@@ -9,6 +9,7 @@ const HeadingRight = ({headingValue,setHeadingValue,id}:any) => {
     const [headingerror, setheadingerror] = useState(false);
 
 
+    
     const headingcheck = () => {
         if (headingValue.length >= 3) {
           setEdit(false);
